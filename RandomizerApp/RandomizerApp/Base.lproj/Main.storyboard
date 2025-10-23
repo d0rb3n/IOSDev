@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomizerApp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="SKp-P2-zdD">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C48-2a-DSF" userLabel="RandomizeButton">
+                                <rect key="frame" x="16" y="718" width="361" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uif-gR-lJJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Randomize"/>
+                                <connections>
+                                    <action selector="randomizeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f75-6R-hm8"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Dodge" translatesAutoresizingMaskIntoConstraints="NO" id="6Ci-ZJ-0lE">
+                                <rect key="frame" x="16" y="197.99999999999997" width="361" height="263.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6Ci-ZJ-0lE" secondAttribute="height" multiplier="248:181" id="knc-np-l0y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dodge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUI-Pj-3Sb">
+                                <rect key="frame" x="16" y="485.33333333333331" width="361" height="39.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C48-2a-DSF" secondAttribute="bottom" constant="16" id="2Cn-aO-pVF"/>
+                            <constraint firstItem="6Ci-ZJ-0lE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="2uE-C3-Qds"/>
+                            <constraint firstItem="pUI-Pj-3Sb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4aA-3F-Zsm"/>
+                            <constraint firstItem="C48-2a-DSF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5OJ-pp-LDv"/>
+                            <constraint firstItem="6Ci-ZJ-0lE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="6fd-18-v8p"/>
+                            <constraint firstAttribute="bottom" secondItem="SKp-P2-zdD" secondAttribute="bottom" id="Gqa-xo-Mlf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C48-2a-DSF" secondAttribute="trailing" constant="16" id="PuB-SK-sFF"/>
+                            <constraint firstItem="C48-2a-DSF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RMy-1P-Qlk"/>
+                            <constraint firstItem="SKp-P2-zdD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Svg-la-hH1"/>
+                            <constraint firstItem="pUI-Pj-3Sb" firstAttribute="top" secondItem="6Ci-ZJ-0lE" secondAttribute="bottom" constant="24" id="TJh-Rw-zng"/>
+                            <constraint firstAttribute="trailing" secondItem="SKp-P2-zdD" secondAttribute="trailing" id="Ulg-f7-Xoj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pUI-Pj-3Sb" secondAttribute="trailing" constant="16" id="fYI-Md-782"/>
+                            <constraint firstItem="SKp-P2-zdD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fn6-ip-Ucv"/>
+                            <constraint firstItem="pUI-Pj-3Sb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oMV-Tp-kSq"/>
+                            <constraint firstItem="6Ci-ZJ-0lE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pZh-Vg-LbC"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ci-ZJ-0lE" secondAttribute="trailing" constant="16" id="tDW-mH-Bng"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="carImageView" destination="6Ci-ZJ-0lE" id="Fqp-3W-mlR"/>
+                        <outlet property="carLabel" destination="pUI-Pj-3Sb" id="ScL-Hc-jfB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackGround" width="640" height="360"/>
+        <image name="Dodge" width="496" height="362"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
